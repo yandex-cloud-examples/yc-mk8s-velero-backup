@@ -1,5 +1,3 @@
-# Название сценария
+# Резервное копирование кластера Yandex Managed Service for Kubernetes® в Yandex Object Storage с помощью Velero
 
-Описание сценария и инструкция по его применению.
-
-Для практических руководств обязательна ссылка на документацию.
+C помощью [Velero](https://velero.io/) вы можете сделать резервные копии данных из групп узлов кластера [Managed Service for Kubernetes®](https://yandex.cloud/ru/docs/managed-kubernetes) и сохранить их в [Object Storage](https://yandex.cloud/ru/docs/storage). Подготовка инфраструктуры для Managed Service for Kubernetes® и Object Storage через Terraform описана в [практическом руководстве](https://cloud.yandex.ru/ru/docs/managed-kubernetes/tutorials/backup), необходимый для настройки конфигурационный файл [velero-backup.tf](velero-backup.tf) расположен в этом репозитории.
