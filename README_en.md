@@ -1,0 +1,3 @@
+# Backing up a Yandex Managed Service for Kubernetes® cluster to Yandex Object Storage using Velero
+
+With [Velero](https://velero.io/), you can back up your data from [Managed Service for Kubernetes®](https://yandex.cloud/docs/managed-kubernetes) and save it in [Yandex Object Storage](https://yandex.cloud/docs/storage). See this [tutorial](https://yandex.cloud/docs/managed-kubernetes/tutorials/backup) to learn how to prepare the infrastructure for Managed Service for Kubernetes® and Object Storage using Terraform. This repository contains the configuration file you will need: [velero-backup.tf](velero-backup.tf).
