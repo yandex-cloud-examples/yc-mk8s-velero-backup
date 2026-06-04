@@ -272,7 +272,12 @@ resource "yandex_storage_bucket" "storage-bucket" {
   bucket     = local.bucket_name
   access_key = yandex_iam_service_account_static_access_key.sa-static-key-k8s.access_key
   secret_key = yandex_iam_service_account_static_access_key.sa-static-key-k8s.secret_key
+}
 
+resource "yandex_storage_bucket_grant" "storage-bucket-grant" {
+  bucket     = yandex_storage_bucket.storage-bucket.bucket
+  access_key = yandex_iam_service_account_static_access_key.sa-static-key-k8s.access_key
+  secret_key = yandex_iam_service_account_static_access_key.sa-static-key-k8s.secret_key
   grant {
     id          = yandex_iam_service_account.velero-sa.id
     type        = "CanonicalUser"
